@@ -1,0 +1,37 @@
+
+
+<h1>usuario de registo mediante  mail y contaseña:</h1>
+      <h2>mail: mailparaelpruci@gmail.com</h2>
+      <h2>contaseña : profeaprobameporfa </h2>
+
+
+
+
+
+<form >
+    <label> Name: <input type="text" [(ngModel)]="this.user.mail" name="user" required>
+    </label>
+    <br>
+   
+    <br>
+    <label> Password: <input type="password" [(ngModel)]="this.user.passw" name="passw" required>
+    </label>
+    
+    <br>
+    <button   [disabled]="this.user.mail == ''  ||  this.user.passw ==''" (click)="Ingresar()">Submit</button>
+  </form>
+  <br>
+  <br>
+  <br>
+  <button (click)=" IngresaraGoogle()">quieres Ingresar x  Google</button>
+  <br><br><br>
+      <button (click)="Status()">status</button>
+      <br><br><br>
+      <button (click)="Logout()"> salir</button>
+
+
+
+
+      
+  
+  <br>
